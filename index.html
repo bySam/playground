@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fundamentals of Strafe - Examples</title>
+    <style>
+      * { padding: 0; margin: 0; }
+      canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+
+<div style="text-align: center">
+<h2> Strafeaim </h2>
+<button onclick="mirror()">Mirror</button>
+<button onclick="antiMirror()">Anti-Mirror</button>
+<button onclick="hswMirror()">HSW Mirror </button>
+<button onclick="hswAntiMirror()">HSW Anti-Mirror</button><br>
+
+  <input type="range" min="0" max="250" value="0" class="slider" id="vrt">
+<p id="vrtOutput"></p>
+<p id="relative"></p>
+
+
+
+
+
+</div>
+
+<canvas id="strafeaimCanvas" width="480" height="320"></canvas>
+<script src="strafeaim.js"></script>
+
+
+<div style="text-align: center">
+<h2> Geometric Positioning</h2>
+  <input type="range" min="0" max="180" value="90" class="slider" id="angleRange">
+<p id="angleOutput"></p>
+<p id="directions"></p>
+</div>
+<canvas id="geometricCanvas" width="480" height="320"></canvas>
+<script src="geometric.js"> </script>
+
+
+
+
+</body>
+</html>
